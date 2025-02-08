@@ -32,7 +32,7 @@ services:
     container_name: telegraf_sensor
     restart: always
     volumes:
-      - /root/telegraf_sensor:/etc/telegraf
+      - /root/telegraf_sensor:/etc/telegraf    # Direktori konfigurasi telegraf
     networks:
       - monitoring_net
     depends_on:
