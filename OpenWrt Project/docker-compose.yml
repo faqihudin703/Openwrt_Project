@@ -1,0 +1,85 @@
+version: "3.8"
+
+services:
+  influxdb:
+    image: influxdb:2.7
+    container_name: influxdb
+    restart: always
+    ports:
+      - "8086:8086"
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+      - influxdb_config:/etc/influxdb2
+    networks:
+      - monitoring_net
+
+  grafana:
+    image: grafana/grafana:main
+    container_name: grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - grafana_config:/etc/grafana
+    networks:
+      - monitoring_net
+    depends_on:
+      - influxdb
+
+  telegraf_sensor:
+    image: telegraf:latest
+    container_name: telegraf_sensor
+    restart: always
+    volumes:
+      - /root/telegraf_sensor:/etc/telegraf
+    networks:
+      - monitoring_net
+    depends_on:
+      - influxdb 
+
+  telegraf_mikrotik:
+    image: telegraf:latest
+    container_name: telegraf_mikrotik
+    restart: always
+    volumes:
+      - /root/telegraf_mikrotik:/etc/telegraf
+    networks:
+      - monitoring_net
+    depends_on:
+      - influxdb
+    
+    
+  nextcloud:
+    image: linuxserver/nextcloud
+    container_name: nextcloud
+    restart: unless-stopped
+    ports:
+      - "8040:443"   # Nextcloud akan berjalan di port 8040 (https)
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Jakarta
+    volumes:
+      - nextcloud_data:/config
+      - nextcloud_html:/data
+    networks:
+      - monitoring_net
+
+networks:
+  monitoring_net:  # 🔹 Jaringan khusus untuk semua container
+    driver: bridge
+
+volumes:
+  influxdb_data:
+    driver: local
+  influxdb_config:
+    driver: local
+  grafana_data:
+    driver: local
+  grafana_config:
+    driver: local
+  nextcloud_data:
+    driver: local
+  nextcloud_html:
+    driver: local
