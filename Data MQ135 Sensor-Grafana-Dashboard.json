@@ -18,14 +18,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
+  "id": 1,
   "links": [],
   "liveNow": true,
   "panels": [
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -57,8 +57,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 8,
         "x": 0,
         "y": 0
       },
@@ -78,7 +78,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -95,7 +95,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -157,9 +157,9 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
+        "h": 7,
+        "w": 16,
+        "x": 8,
         "y": 0
       },
       "id": 3,
@@ -176,7 +176,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -193,7 +193,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -225,10 +225,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 8,
         "x": 0,
-        "y": 8
+        "y": 7
       },
       "id": 9,
       "options": {
@@ -246,7 +246,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -263,7 +263,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -325,10 +325,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 8
+        "h": 7,
+        "w": 16,
+        "x": 8,
+        "y": 7
       },
       "id": 14,
       "options": {
@@ -344,7 +344,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -361,7 +361,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -393,10 +393,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 8,
         "x": 0,
-        "y": 16
+        "y": 14
       },
       "id": 8,
       "options": {
@@ -414,7 +414,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -431,7 +431,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -493,10 +493,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 16
+        "h": 7,
+        "w": 16,
+        "x": 8,
+        "y": 14
       },
       "id": 13,
       "options": {
@@ -512,7 +512,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -529,7 +529,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -561,10 +561,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 8,
         "x": 0,
-        "y": 24
+        "y": 21
       },
       "id": 7,
       "options": {
@@ -582,7 +582,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -599,7 +599,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -661,10 +661,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 24
+        "h": 7,
+        "w": 16,
+        "x": 8,
+        "y": 21
       },
       "id": 12,
       "options": {
@@ -680,7 +680,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -697,7 +697,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -729,10 +729,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 8,
         "x": 0,
-        "y": 32
+        "y": 28
       },
       "id": 17,
       "options": {
@@ -750,7 +750,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -767,7 +767,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -829,10 +829,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 32
+        "h": 7,
+        "w": 16,
+        "x": 8,
+        "y": 28
       },
       "id": 20,
       "options": {
@@ -848,7 +848,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -865,7 +865,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -897,10 +897,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 8,
         "x": 0,
-        "y": 40
+        "y": 35
       },
       "id": 16,
       "options": {
@@ -918,7 +918,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -935,7 +935,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -997,10 +997,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 40
+        "h": 7,
+        "w": 16,
+        "x": 8,
+        "y": 35
       },
       "id": 19,
       "options": {
@@ -1016,7 +1016,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -1033,7 +1033,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -1065,10 +1065,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 8,
         "x": 0,
-        "y": 48
+        "y": 42
       },
       "id": 15,
       "options": {
@@ -1086,7 +1086,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -1103,7 +1103,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -1165,10 +1165,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 48
+        "h": 7,
+        "w": 16,
+        "x": 8,
+        "y": 42
       },
       "id": 18,
       "options": {
@@ -1184,7 +1184,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -1216,6 +1216,6 @@
   "timezone": "browser",
   "title": "Data MQ135 Sensor",
   "uid": "eec82z4oeton4d",
-  "version": 22,
+  "version": 3,
   "weekStart": ""
 }

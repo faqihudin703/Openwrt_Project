@@ -18,14 +18,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 2,
   "links": [],
   "liveNow": true,
   "panels": [
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -78,7 +78,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -95,7 +95,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -176,7 +176,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -193,7 +193,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -246,7 +246,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "query": "from(bucket: \"Sensor\")\r\n  |> range(start: -1h)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"mqtt_consumer\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"sensor1_humidity\")\r\n  |> aggregateWindow(every: 1m, fn: mean)\r\n  |> yield(name: \"humidity1\")",
@@ -259,7 +259,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -340,7 +340,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "query": "from(bucket: \"Sensor\")\r\n  |> range(start: -1h)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"mqtt_consumer\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"sensor1_humidity\")",
@@ -353,7 +353,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -406,7 +406,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -423,7 +423,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -504,7 +504,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "datasource": {
@@ -521,7 +521,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -574,7 +574,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "query": "from(bucket: \"Sensor\")\r\n  |> range(start: -1h)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"mqtt_consumer\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"sensor2_humidity\")\r\n  |> aggregateWindow(every: 1m, fn: mean)\r\n  |> yield(name: \"humidity2\")",
@@ -587,7 +587,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "aec7ybfo3r75se"
+        "uid": "decit7dzgd6v4c"
       },
       "fieldConfig": {
         "defaults": {
@@ -668,7 +668,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.0-222294",
+      "pluginVersion": "11.6.0-222925",
       "targets": [
         {
           "query": "from(bucket: \"Sensor\")\r\n  |> range(start: -1h)\r\n  |> filter(fn: (r) => r[\"_measurement\"] == \"mqtt_consumer\")\r\n  |> filter(fn: (r) => r[\"_field\"] == \"sensor2_humidity\")",
@@ -691,6 +691,7 @@
     "to": "now"
   },
   "timepicker": {
+    "hidden": true,
     "refresh_intervals": [
       "5s",
       "10s",
@@ -704,6 +705,6 @@
   "timezone": "browser",
   "title": "Data DHT22 Sensor",
   "uid": "aebcw4wuvesqoe",
-  "version": 7,
+  "version": 2,
   "weekStart": ""
 }

@@ -11,7 +11,7 @@ services:
       - influxdb_data:/var/lib/influxdb2
       - influxdb_config:/etc/influxdb2
     networks:
-      - monitoring_net
+      - server_network
 
   grafana:
     image: grafana/grafana:main
@@ -23,7 +23,7 @@ services:
       - grafana_data:/var/lib/grafana
       - grafana_config:/etc/grafana
     networks:
-      - monitoring_net
+      - server_network
     depends_on:
       - influxdb
 
@@ -32,16 +32,16 @@ services:
     container_name: telegraf_sensor
     restart: always
     volumes:
-      - /root/telegraf_sensor:/etc/telegraf    # Direktori konfigurasi telegraf
+      - telegraf_config:/etc/telegraf    # Direktori konfigurasi telegraf
     networks:
-      - monitoring_net
+      - server_network
     depends_on:
       - influxdb 
 
   nextcloud:
     image: linuxserver/nextcloud
     container_name: nextcloud
-    restart: unless-stopped
+    restart: always
     ports:
       - "8040:443"   # Nextcloud akan berjalan di port 8040 (https)
     environment:
@@ -52,10 +52,20 @@ services:
       - nextcloud_data:/config
       - nextcloud_html:/data
     networks:
-      - monitoring_net
+      - server_network
+
+  homeassistant:
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    restart: always
+    network_mode: host
+    volumes:
+      - homeassistant_data:/config
+    environment:
+      - TZ=Asia/Jakarta
 
 networks:
-  monitoring_net:  # 🔹 Jaringan khusus untuk semua container
+  server_network:  # 🔹 Jaringan khusus untuk semua container
     driver: bridge
 
 volumes:
@@ -67,7 +77,11 @@ volumes:
     driver: local
   grafana_config:
     driver: local
+  telegraf_config:
+    driver: local
   nextcloud_data:
     driver: local
   nextcloud_html:
+    driver: local
+  homeassistant_data:
     driver: local
